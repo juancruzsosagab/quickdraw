@@ -1,6 +1,6 @@
 # QuickDraw Editor 🎨
 
-Un editor visual simple e interactivo construido con **Tldraw**, **Next.js**, **tRPC** y tecnologías modernas de React. Este proyecto es una implementación completa de una prueba técnica que demuestra capacidades de desarrollo full-stack con APIs type-safe y un diseño elegante.
+Un editor visual simple e interactivo construido con **Tldraw**, **Next.js**, **tRPC** y tecnologías modernas de React. Este proyecto es una implementación completa de una prueba técnica que demuestra capacidades de desarrollo full-stack con APIs type-safe y un diseño simple.
 
 ## 🚀 Características Principales
 
