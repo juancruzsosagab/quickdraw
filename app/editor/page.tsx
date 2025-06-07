@@ -16,7 +16,9 @@ import { throttle } from "lodash";
 import { ShapeColorPicker } from "@/components/ui/shape-color-picker";
 import { hasColorProp } from "@/lib/tldraw/utils";
 import { setupShapeSelectionListener } from "@/lib/tldraw/shape-selection-listener";
+import { Button } from "@/components/ui/button";
 import type { ColorName } from "@/lib/tldraw/types";
+import Link from "next/link";
 import "tldraw/tldraw.css";
 
 export default function EditorPage() {
@@ -86,6 +88,14 @@ export default function EditorPage() {
 
   return (
     <div className="flex flex-col items-center justify-center  gap-4 p-4 h-full w-full">
+      <div className="w-full max-w-5xl flex justify-between items-center">
+        <Button asChild variant="outline" size="sm">
+          <Link href="/">🏠 Volver al Inicio</Link>
+        </Button>
+        <Button asChild variant="outline" size="sm">
+          <Link href="/api-test">🧪 Probar APIs</Link>
+        </Button>
+      </div>
       <div className="w-full max-w-5xl bg-blue-100 border border-blue-300 text-blue-900 rounded p-4 text-sm shadow">
         🧪 <strong>Prueba técnica:</strong> Se implementó una paleta
         personalizada para cambiar el color de una figura seleccionada.

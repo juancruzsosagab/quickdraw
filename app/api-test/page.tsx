@@ -137,28 +137,28 @@ export default function ApiTestPage() {
             size="sm"
             className="w-full"
           >
-            🗑️ Clear Results
+            🗑️ Limpiar resultados
           </Button>
         </div>
 
-        <div className="space-y-4">
-          <h2 className="text-xl font-semibold">🔗 Navigation</h2>
+         <div className="space-y-4">
+          <h2 className="text-xl font-semibold">🔗 Navegación</h2>
           <div className="space-y-2">
             <Button asChild variant="default" className="w-full">
-              <Link href="/editor">✏️ Go to Editor</Link>
+              <Link href="/editor">✏️ Ir al Editor</Link>
             </Button>
             <Button asChild variant="outline" className="w-full">
-              <Link href="/">🏠 Back to Home</Link>
+              <Link href="/">🏠 Volver al Inicio</Link>
             </Button>
           </div>
           
           <div className="bg-blue-50 p-4 rounded-lg text-sm">
-            <h3 className="font-semibold text-blue-900 mb-2">🎯 What happens:</h3>
+            <h3 className="font-semibold text-blue-900 mb-2">🎯 Qué sucede:</h3>
             <ul className="text-blue-800 space-y-1">
-              <li>• GET: Retrieves stored document</li>
-              <li>• SAVE: Generates random shapes/data</li>
-              <li>• Each click creates different data</li>
-              <li>• Watch timestamps and IDs change!</li>
+              <li>• GET: Obtiene el documento guardado</li>
+              <li>• SAVE: Genera figuras y datos aleatorios</li>
+              <li>• Cada clic crea datos diferentes</li>
+              <li>• ¡Observa como cambian los timestamps e IDs!</li>
             </ul>
           </div>
         </div>
@@ -166,10 +166,10 @@ export default function ApiTestPage() {
 
       <div className="bg-gray-50 border rounded-lg p-4">
         <div className="flex items-center justify-between mb-3">
-          <h2 className="text-lg font-semibold">📋 API Response</h2>
+          <h2 className="text-lg font-semibold">📋 Respuesta de la API</h2>
           {result && (
             <span className="text-sm text-muted-foreground">
-              {result.includes('✅') ? '🟢 Success' : result.includes('❌') ? '🔴 Error' : '⚪ Ready'}
+              {result.includes('✅') ? '🟢 Éxito' : result.includes('❌') ? '🔴 Error' : '⚪ Listo'}
             </span>
           )}
         </div>
@@ -178,10 +178,10 @@ export default function ApiTestPage() {
             <pre className="whitespace-pre-wrap text-sm text-gray-800">{result}</pre>
           ) : (
             <div className="text-center text-gray-500 py-12">
-              <p className="text-lg">🚀 Ready to test!</p>
-              <p className="text-sm mt-2">Click buttons above to see random data generation</p>
+              <p className="text-lg">🚀 ¡Listo para probar!</p>
+              <p className="text-sm mt-2">Haz clic en los botones de arriba para ver la generación de datos aleatorios</p>
               <p className="text-xs mt-1 text-gray-400">
-                Each test generates unique timestamps, IDs, and random shapes
+                Cada prueba genera timestamps únicos, IDs y figuras aleatorias
               </p>
             </div>
           )}
