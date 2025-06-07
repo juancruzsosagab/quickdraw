@@ -28,9 +28,15 @@ export default function Home() {
           </span>
         </div>
 
-        <Button size="lg" className="text-base px-6 py-2">
-          <Link href="/editor">✏️ Empezar a dibujar</Link>
-        </Button>
+        <div className="flex gap-4">
+          <Button size="lg" className="text-base px-6 py-2 w-48">
+            <Link href="/editor">✏️ Empezar a dibujar</Link>
+          </Button>
+          
+          <Button size="lg" variant="outline" className="text-base px-6 py-2 w-48">
+            <Link href="/api-test">🧪 Probar APIs</Link>
+          </Button>
+        </div>
       </main>
 
       <footer className="row-start-2 flex flex-col items-center gap-2 text-sm text-gray-500">
